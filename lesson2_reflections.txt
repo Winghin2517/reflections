@@ -5,3 +5,23 @@ You get a .git hidden folder in your directory. You will need it to store your f
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 The staging area groups the docs you want to commit all at the same time. This helps in grouping your docs to ensure that there is some order per commit.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+You can see all the files you have add on git (git add) to the staging area and using git diff you can see the difference between these files and the files in the working directory. You can also use git diff --staged to see the difference between the files in the staging area and the repository.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+I would need branches to work on different features of my app and that would help me keep my work organised.
+
+How do the diagrams help you visualize the branch structure?
+
+They help me in understanding whether something is reachable or not by seeing that if there is a commit without a branch, it could potentially be unreachable which means commits to it will be lost.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Merging the 2 branches together means that the code for the two branches will become one. We need to checkout on the branch that we want to keep, hence master before we click merge. The commits will then be merged together according to their timestamps. We can use the git show commit-id command to compare the commits against their parents.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Automatic merging for simple changes means that there is less work for the user. Merging manually means you have control over what to keep and what to discard.
